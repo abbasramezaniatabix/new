@@ -1,6 +1,5 @@
-
-  <template>
-  <div>
+<template>
+  <div id="app">
     <CardGame title="CardGame" />
   </div>
 </template>
@@ -10,7 +9,7 @@
 import CardGame from "./components/CardGame.vue";
 
 export default {
-  name: "CardGame",
+  name: "App",
   components: {
     CardGame,
   },
