@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="container">
     <h3>{{ name }}{{ cards }}</h3>
-    <button type="button" @click="shuffle">Shuffle</button>
+    <div class="btn"><button type="button" @click="shuffle">Shuffle</button>
+  
+  </div>
   </div>
 </template>
 
@@ -12,6 +14,7 @@ export default {
   props: {
     name: String,
     cards: Array,
+    deck: Array
   },
   methods: {
     shuffle() {
@@ -24,5 +27,12 @@ export default {
 
 <style scoped>
 
+.btn{
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 30px;
+  margin-bottom: 0 !important;
+}
 </style>
 
