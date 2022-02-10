@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <img src="assets./file1.png" />
+    <img :src="file1" />
     <div class="title">
       <h1>{{ title }}</h1>
     </div>
@@ -18,6 +18,7 @@
 
 <script>
 import Player from "./Player.vue";
+import File1 from "../assets/img 52/File 1.png"
 
 export default {
   name: "CardGame",
@@ -26,6 +27,7 @@ export default {
   },
   data() {
     return {
+      file1: File1,
       details: ["50% coton", " 30 wool", "20 polyester"],
       title: "start game",
       player1: "Alice",
